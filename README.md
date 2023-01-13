@@ -2,6 +2,12 @@
 
 <uses-permission  android:name="android.permission.INTERNET"></uses-permission>
 
+<h2>In AndroidManifest</h2>
+<h3><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission  android:name="android.permission.INTERNET"></uses-permission>
+    </h3>
+
 
 android:id="@+id/webview"
 
@@ -13,9 +19,9 @@ import android.webkit.WebViewClient;
 private WebView mywebView;
 
 
-mywebView=(WebView) findViewById(R.id.webview);
+ mywebView=(WebView) findViewById(R.id.webview);
  mywebView.setWebViewClient(new WebViewClient());
- mywebView.loadUrl("https://techproadvice.blogspot.com/");
+ mywebView.loadUrl("Your website address");
  WebSettings webSettings=mywebView.getSettings();
  webSettings.setJavaScriptEnabled(true);
  
