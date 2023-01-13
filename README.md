@@ -1,6 +1,6 @@
 # Convert Website Into Android App
 
-<uses-permission  android:name="android.permission.INTERNET"></uses-permission>
+<h4><uses-permission  android:name="android.permission.INTERNET"></uses-permission></h4>
 
 <h2>In AndroidManifest</h2>
 <h3><manifest xmlns:android="http://schemas.android.com/apk/res/android"
