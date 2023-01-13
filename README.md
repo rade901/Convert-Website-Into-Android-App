@@ -3,9 +3,9 @@
 <h4><uses-permission  android:name="android.permission.INTERNET"></uses-permission></h4>
 --------------------------------------------------------------------------------------------------
 <h2>In AndroidManifest</h2>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<code><manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission  android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission  android:name="android.permission.INTERNET"></uses-permission><code>
 --------------------------------------------------------------------------------------------------
 
 
