@@ -1,7 +1,7 @@
 # Convert Website Into Android App
 
 <h2>In AndroidManifest add</h2>
-<h4><uses-permission  android:name="android.permission.INTERNET"></uses-permission></h4>
+<uses-permission  android:name="android.permission.INTERNET"></uses-permission>
 --------------------------------------------------------------------------------------------------
 
 
