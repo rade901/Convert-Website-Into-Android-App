@@ -5,7 +5,7 @@
 <h2>In AndroidManifest</h2>
 <code><manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission  android:name="android.permission.INTERNET"></uses-permission><code>
+    <uses-permission  android:name="android.permission.INTERNET"></uses-permission></code>
 --------------------------------------------------------------------------------------------------
 
 
