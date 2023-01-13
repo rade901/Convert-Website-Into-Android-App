@@ -46,6 +46,9 @@
         android:layout_height="match_parent" />
 `</RelativeLayout>`
 
-<h4>In activity_main on Designe</h4>
-<h3>add loyout webview</h3>
+<h3>In activity_main on Designe</h3>
+<h4>add loyout webview</h4>
+
+<h3>In res values in style or themes xml make this line like this</h3>
+    <h4><style name="Theme.this be your name of app" parent="Theme.MaterialComponents.DayNight.DarkActionBar"></h4>
 
