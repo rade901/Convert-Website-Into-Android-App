@@ -1,45 +1,50 @@
 # Convert Website Into Android App
 
-<h2>In AndroidManifest add</h2>
+<h4>In AndroidManifest add Like this</h4>
 
-<uses-permission  android:name="android.permission.INTERNET"></uses-permission>
+-------------------------------------------------------------------------------------------------
+`<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission  android:name="android.permission.INTERNET"></uses-permission>`
 --------------------------------------------------------------------------------------------------
 
+<h4>In MainActivity.java add</h4>
 
-android:id="@+id/webview"
+`import android.webkit.WebSettings;` <br>
+`import android.webkit.WebView;`  
+`import android.webkit.WebViewClient;`
 
-import android.webkit.WebSettings; 
-import android.webkit.WebView; 
-import android.webkit.WebViewClient;
+<h4>In class add like this</h4>
+<h2>public class MainActivity extends AppCompatActivity {</h2>
+ private WebView mywebView;
 
-
-private WebView mywebView;
-
-
- mywebView=(WebView) findViewById(R.id.webview);
- mywebView.setWebViewClient(new WebViewClient());
- mywebView.loadUrl("Your website address");
- WebSettings webSettings=mywebView.getSettings();
- webSettings.setJavaScriptEnabled(true);
- 
- 
- public class mywebClient extends WebViewClient{
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon){
-            super.onPageStarted(view,url,favicon);
-        }
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view,String url){
-            view.loadUrl(url);
-            return true;
-        }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mywebView=(WebView) findViewById(R.id.webview);
+        mywebView.setWebViewClient(new WebViewClient());
+        mywebView.loadUrl("your web site");
+        WebSettings webSettings=mywebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
     }
-@Override
-    public void onBackPressed(){
-        if(mywebView.canGoBack()) {
-            mywebView.goBack();
-        }
-    else{
-        super.onBackPressed();
-            }
-}
+<h4>In activity_main make like this</h4>
+
+<?xml version="1.0" encoding="utf-8"?>
+`<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">`
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+`</RelativeLayout>`
+
+<h4>In activity_main on Designe</h4>
+<h3>add loyout webview</h3>
+
